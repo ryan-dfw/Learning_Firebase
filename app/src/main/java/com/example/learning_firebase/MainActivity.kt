@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         buttonSend.setOnClickListener {
             val userName : String = editTextName.text.toString()
 
-            reference.child("userName")
+            reference.child("userName").setValue(userName)
         }
     }
 }
